@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Forntinite Data Users</string>
+    <string name="nickHint">nick</string>
+    <string name="default_title">default Title</string>
+    <string name="default_value">default Value</string>
+    <string name="default_rank">default Rank</string>
+</resources>
