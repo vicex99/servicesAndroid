@@ -1,17 +1,17 @@
 package com.utad.tarea_database_fortiniteservice.models
 
-class Stats (
-    p10: positionFinish?
+class ForniteUsers (
+    val stats: StatsFornite?
 ){
 
     companion object {
         @Volatile
-        private var INSTANCE: Stats? = null
+        private var INSTANCE: ForniteUsers? = null
 
-        fun getInstance(): Stats = INSTANCE
+        fun getInstance(): ForniteUsers = INSTANCE
             ?: synchronized(this){
                 INSTANCE
-                    ?: Stats(null
+                    ?: ForniteUsers(null
                     ).also { INSTANCE = it}
             }
         fun destroyInstance(){

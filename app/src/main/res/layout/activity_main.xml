@@ -66,47 +66,9 @@
     >
 
         <android.support.v7.widget.RecyclerView
+                android:id="@+id/CardItem"
                 android:layout_width="153dp"
                 android:layout_height="159dp">
-
-            <TextView
-                    android:id="@+id/title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="@dimen/marginMain"
-
-                    android:layout_centerHorizontal="true"
-
-
-                    android:text="@string/default_title"/>
-
-            <TextView
-                    android:id="@+id/value"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_below="@id/title"
-
-                    android:layout_marginTop="@dimen/marginMain"
-
-                    android:layout_centerHorizontal="true"
-
-                    android:text="@string/default_value"/>
-
-            <TextView
-                    android:id="@+id/rank"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_below="@id/value"
-
-                    android:layout_marginTop="20dp"
-
-                    android:layout_centerHorizontal="true"
-
-
-                    android:text="@string/default_rank"/>
 
         </android.support.v7.widget.RecyclerView>
     </android.support.constraint.ConstraintLayout>

@@ -1,9 +1,9 @@
 package com.utad.tarea_database_fortiniteservice.models
 
 class dataRank (
-    title: String?,
-    value: String?,
-    rank: String?
+    val title: String,
+    val value: String,
+    val rank: String
 ){
 
     companion object {
@@ -13,7 +13,8 @@ class dataRank (
         fun getInstance(): dataRank = INSTANCE
             ?: synchronized(this){
                 INSTANCE
-                    ?: dataRank(null,null, null
+                    ?: dataRank(
+                        null.toString(), null.toString(), null.toString()
                     ).also { INSTANCE = it}
             }
         fun destroyInstance(){

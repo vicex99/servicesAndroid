@@ -1,22 +1,22 @@
 package com.utad.tarea_database_fortiniteservice.models
 
-class positionFinish (
-    score: dataRank?,
-    matches: dataRank?,
-    kills: dataRank?
+class StatsUser (
+    val score: dataRank?,
+    val matches: dataRank?,
+    val kills: dataRank?
 ) {
 
     companion object {
         @Volatile
-        private var INSTANCE: positionFinish? = null
+        private var INSTANCE: StatsUser? = null
 
-        fun getInstance(): positionFinish = INSTANCE
+        fun getInstance(): StatsUser = INSTANCE
             ?: synchronized(this) {
                 INSTANCE
-                    ?: positionFinish(
+                    ?: StatsUser(
                         null, null, null
                     ).also { INSTANCE = it }
-            } as positionFinish
+            }
 
         fun destroyInstance() {
             INSTANCE = null
